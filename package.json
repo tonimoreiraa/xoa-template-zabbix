@@ -1,0 +1,11 @@
+{
+  "name": "teste-xoa",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "xo-cli": "^0.18.0",
+    "xo-lib": "^0.11.1"
+  }
+}
