@@ -26,7 +26,7 @@ xo.on('notification', async notification => {
 const command = process.argv[6]
 if (command == 'get-all') {
   const srs = Object.keys(await xo.call('sr.getAllUnhealthyVdiChainsLength'))
-  console.log(JSON.stringify({data: srs.map(sr => ({"#{SR_ID}": sr}))}))
+  console.log(JSON.stringify({data: srs.map(sr => ({"{#SR_ID}": sr}))}))
   xo.close()
 } else if (command == 'get') {
   srStatus = (await xo.call('sr.stats', {id})).stats.iops.r.reduce((x, y) => x+y)
